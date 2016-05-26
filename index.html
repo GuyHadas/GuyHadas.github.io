@@ -2,34 +2,81 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CowboyFrenzy</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
-    <style>
-      #game-canvas {
-        border: 1px solid black;
-        /*background: linear-gradient(#2c3e50, #27ae60);*/
-        background-image: url("gradient-bg.jpg");
-        background-size: 1000px 600px;
-      }
-    </style>
-    <link rel="stylesheet" type="text/css" href="game.css">
+    <title>Guy Hadas</title>
+    <link rel="shortcut icon" href="assets/images/icons/GH.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div class="game">
-      <canvas id="game-canvas" width=1000 height=600>
-    </div>
-
-    <div class="instructions-wrapper">
-      <div class="instructions">
-        <span class="instructions-title">Instructions</span>
-        <span class="instructions-desc">Shoot the balls until they no longer exist. Each time you hit a ball with your rope, two more will appear until they are too small. If you get hit with a bubble you lose a life.</span>
-        <span class="keyboard"><img src="keyboard.png"/></span>
-        <span class="instructions-begin">Hit SPACE to play</span>
+    <!-- <nav>
+      <div class="nav-elements">
+        <span class="nav-element">Projects</span>
+        <span class="nav-element">About</span>
+        <span class="nav-element">Contact</span>
       </div>
-    </div>
-
-    <script type='text/javascript' src="bundle.js"></script>
-
-  </body>
+    </nav> -->
+      <section class="cover">
+        <div class="cover-bio">
+          <span id="cover-bio-name">Guy Hadas</span>
+          <span id="cover-bio-occup">Software Engineer</span>
+        <div>
+      </section>
+      <section class="projects">
+        <div class="projects-header">
+          <span class="projects-title">Personal Projects</span>
+          <ul class="projects-list">
+            <li onClick="window.open('http://www.scribbble.us', '_blank')" class="project-card">
+              <span class="project-title">Scribbble</span>
+              <span class="project-desc">A web application for designers to receive feedback throughout their design process.</span>
+              <img src="./assets/images/scribbble.png">
+            </li>
+            <li onClick="window.open('https://guyhadas.github.io/cowboyShootout', '_blank')" class="project-card">
+              <span class="project-title">Cowboy Shootout</span>
+              <span class="project-desc">A browser-based arcade game built in Javascript and HTML5 Canvas.</span>
+              <img src="./assets/images/cowboyShootout.gif">
+            </li>
+            <li onClick="window.open('https://hangouttime.firebaseapp.com', '_blank')" class="project-card">
+              <span class="project-title">Hangout Time</span>
+              <span class="project-desc">A chat app that allows users to move around a virtual map while chatting.</span>
+              <img src="./assets/images/hangouttime.png">
+            </li>
+            <li onClick="window.open('https://github.com/GuyHadas/pokedex', '_blank')" class="project-card">
+              <span class="project-title">Pokedex</span>
+              <span class="project-desc">An iOS app to keep track and learn of your favorite pokemon.</span>
+              <img src="./assets/images/Pokedex.png">
+            </li>
+            <li onClick="window.open('https://github.com/GuyHadas/custom-orm', '_blank')" class="project-card">
+              <span class="project-title">Custom ORM</span>
+              <span class="project-desc">A custom ORM inspired by Rails' Active Record built with Ruby.</span>
+              <img id="code-snippet" src="./assets/images/custom-orm-snippet.png">
+            </li>
+            <li onClick="window.open('https://github.com/GuyHadas/strangerbook', '_blank')" class="project-card">
+              <span class="project-title">Stranger Book</span>
+              <span class="project-desc">A social media app that allows users to share and like photos.</span>
+              <img src="./assets/images/StrangerBook.png">
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about-header">
+          <span class="about-title">Experience</span>
+        </div>
+        <div class="experience">
+          <img src="./assets/images/Bio.png" class="bio">
+        </div>
+      </section>
+      <section class="footer">
+        <span class="logo">Guy Hadas</span>
+        <div class="footer-elements">
+          <a class="footer-element" href="https://www.linkedin.com/in/guhadas" target="_blank">Linkedin</a>
+          <span>|</span>
+          <a class="footer-element" href="Resume.pdf" target="_blank">Resume</a>
+          <span>|</span>
+          <a id="email" class="footer-element" href="mailto:guyhadas195@gmail.com">Email</a>
+        </div>
+      </section>
+    </body>
 </html>
