@@ -278,6 +278,22 @@ nav {
   background-color: rgba(0,0,0,0.1);
 }
 
+a:link{
+  color:black;
+}
+a:visited{
+  color:black;
+}
+a:hover{
+  color:black;
+}
+a:focus{
+  color:black;
+}
+a:active{
+  color:black;
+}
+
 .logo {
   margin-right: auto;
   margin-left: 50px;
